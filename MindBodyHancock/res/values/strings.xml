@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MindBodyHancock</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="loading">Waiting for sync...</string>
+    <string name="description_refresh">Refresh</string>
+    <string name="tbd">TBD</string>
+    <string name="client">"Client: "</string>
+    <string name="detail_title">%1$s\'s Schedule</string>
+    <string name="has_no_appointments">%1$s has no appointments</string>
+    <string name="no_staff_members_found">No staff members found</string>
+
+</resources>
