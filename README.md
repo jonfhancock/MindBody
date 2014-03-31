@@ -55,8 +55,7 @@ On tablets where we have more space, I maintain a master detail layout where the
 
 A sensible theme
 -------
-I used the [ActionBar Style Generator](http://jgilfelt.github.io/android-actionbarstylegenerator/).
-This allowed me to quickly build an orange theme to roughly match the MindBody look.
+I used the [ActionBar Style Generator](http://jgilfelt.github.io/android-actionbarstylegenerator/) to quickly build an orange theme to roughly match the MindBody look.
 
 Extras
 -------
