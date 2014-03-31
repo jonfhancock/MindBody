@@ -15,7 +15,7 @@ Dealing with SOAP
 -------
 My first  hurdle was dealing with SOAP.  I've mostly used RESTfull APIs with JSON.  I did work with the Google Checkout Notifications API in XML, but that was in PHP, and a few years ago.
 
-I quickly saw that I would either have to find a library to marshal and unmarshal xml or write all the parsing code myself.  I am fond of having POJOs to work with, so I went looking for a library.
+I quickly saw that I would either have to find a library to marshal and unmarshal xml or write all the parsing code myself.  I am fond of having POJOs to work with, and I'm not fond of hand writing parser code, so I went looking for a library.
 
 I found a libray called [icesoap](https://github.com/jonfhancock/MindBody) that worked perfectly for me.
 It allowed me to specify the SOAP envelopes and actions I wanted to use, and what Java classes I wanted it to be marshalled to.
