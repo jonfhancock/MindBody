@@ -71,3 +71,9 @@ The results
 * It supports orientation changes (I'm saddened by how many apps lock users into portrait mode).  
 * It works offline, although due to cache limitations defined on the server, which Picasso respects, photos won't load offline.
 * It meets all of the requirements plus a few extra bonuses. 
+
+
+Fun Notes
+-------
+There are two acceptable ways to pass an object from an Activity to a Fragment.  One is to pass it as a Parcelable extra in arguments, and the other is to pass a content Uri for the ContentProvider.
+I implemented Parcelable before I decided to use a ContentProvider.  There is no real need for Parcelable now, but I left it intact, and I use it to pass the Staff object to the Appointments Fragment only to demonstrate that I have a firm handle on how both systems work.
