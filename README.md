@@ -9,7 +9,7 @@ I set out to write an app that:
 * Supports 98% of the Android devices active today (Gingerbread and up)
 * Goes above and beyond the minimum viable product
 
-Download the apk here: https://github.com/jonfhancock/MindBody/blob/master/MindBodyHancock-debug.apk?raw=true
+[Download the apk](https://github.com/jonfhancock/MindBody/blob/master/MindBodyHancock-debug.apk?raw=true)
 
 Dealing with SOAP
 -------
@@ -17,13 +17,13 @@ My first  hurdle was dealing with SOAP.  I've mostly used RESTfull APIs with JSO
 
 I quickly saw that I would either have to find a library to marshal and unmarshal xml or write all the parsing code myself.  I am fond of having POJOs to work with, so I went looking for a library.
 
-I found a libray called icesoap that worked perfectly for me at https://github.com/AlexGilleran/IceSoap.
+I found a libray called [icesoap](https://github.com/jonfhancock/MindBody) that worked perfectly for me.
 It allowed me to specify the SOAP envelopes and actions I wanted to use, and what Java classes I wanted it to be marshalled to.
 
 
 POJO Boilerplate
 -------
-I very much dislike writing tedious boilerplate code, so some time ago, I built an application that can read a JSON stream and output Java classes including annotations for gson, and having each class implement Parcelable, a very useful interface for Android data models.  https://github.com/jonfhancock/JsonToJava
+I very much dislike writing tedious boilerplate code, so some time ago, I built [an application that can read a JSON stream and output Java classes](https://github.com/jonfhancock/JsonToJava) including annotations for gson, and having each class implement Parcelable, a very useful interface for Android data models.  
 
 I converted the xml responses from the API to json, and ran them through my code generator, and the result required only a few tweaks to be useable with icesoap.
 
@@ -31,7 +31,7 @@ ContentProviders
 -------
 Having the Pojos was great, but it left me with making API calls after user interaction, which can appear slow to the user, and would make the app useless offline. So I turned to a ContentProvider to store the data locally and load it into my views instantly rather than waiting for API calls to finish.
 
-That means more tedious boilerplate code, so I turned to a project by a friend at Google to generate the content provider code on my behalf given a json configuration file. https://github.com/foxykeep/ContentProviderCodeGenerator
+That means more tedious boilerplate code, so I turned to [a project by a friend at Google](https://github.com/foxykeep/ContentProviderCodeGenerator) to generate the content provider code on my behalf given a json configuration file. 
 
 SyncAdapter
 -------
@@ -55,14 +55,14 @@ On tablets where we have more space, I maintain a master detail layout where the
 
 A sensible theme
 -------
-I used the ActionBar Style Generator here: http://jgilfelt.github.io/android-actionbarstylegenerator/
+I used the [ActionBar Style Generator](http://jgilfelt.github.io/android-actionbarstylegenerator/).
 This allowed me to quickly build an orange theme to roughly match the MindBody look.
 
 Extras
 -------
 I decided to give some of the staff members photo avatars so that I could display them in the app.  I show an image, if available, next to their names.
 
-To do that with very little code, I used Square's Picasso library: http://square.github.io/picasso/
+To do that with very little code, I used [Square's Picasso library](http://square.github.io/picasso/).
 
 The results
 -------
