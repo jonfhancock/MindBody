@@ -9,6 +9,7 @@ I set out to write an app that:
 * Supports 98% of the Android devices active today (Gingerbread and up)
 * Goes above and beyond the minimum viable product
 
+Download the apk here: https://github.com/jonfhancock/MindBody/blob/master/MindBodyHancock-debug.apk
 
 Dealing with SOAP
 -------
